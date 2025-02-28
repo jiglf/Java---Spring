@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Juan Antonio Iglesias Fuentes">
+    <title>La batalla de la tierra media</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+
+        <div>
+            <h1>LA BATALLA DE LA TIERRA MEDIA</h1>
+        </div>
+        
+        <div class="seccionListas">
+            <div class="listas">
+                <h2>HÉROES</h2>
+                <ul id="listaHeroes">
+                    <li th:each="heroe : ${ejercitoHeroes}">
+                        <span th:text="${heroe}"></span>
+                    </li>
+                </ul>
+               
+            </div>
+
+            <div class="listas">
+                <h2>BESTIAS</h2>
+                <ul id="listaBestias">
+                    <li th:each="bestia : ${ejercitoBestias}">
+                        <span th:text="${bestia}"></span>
+                    </li>
+                </ul>
+                
+            </div>
+
+        </div>
+
+        <div>
+            
+            <div class="contenedorBotones">
+                <a th:href="@{/crear-personaje}">
+                    <button>
+                        Añadir Personaje
+                    </button>
+                </a>
+           
+                <a th:href="@{/resultadoLucha}">
+                    <button>
+                        ¡Lucha!
+                    </button>
+                </a>
+            </div>
+        </div>
+        
+       
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Juan Antonio Iglesias Fuentes">
+    <title>Resultado Lucha</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <h2>Resultado Lucha</h2>
+
+    <div class="contenedor">
+        <textarea readonly th:text="${resumenBatalla}"></textarea>
+    </div>
+    
+    <form action="/reiniciar-juego" method="get">
+        <button type="submit">VOLVER</button>
+    </form>
+   
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+.contenedor {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.seccionListas {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+h1,h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.listas {
+    overflow-y: visible;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f9f9f9;
+    min-height: 150px;
+    max-height: none; 
+    
+}
+
+.contenedorBotones {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form {
+    width: 50%; 
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px;
+}
+
+textarea {
+    width: 97%;
+    height: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+}
+
+
+
+
+
